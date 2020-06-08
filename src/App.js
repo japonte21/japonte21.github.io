@@ -76,8 +76,7 @@ const App = () => {
                 implementations for things that may not seem connected to
                 coding.
               </p>
-            </EuiText>
-            <EuiText>
+              <EuiSpacer />
               <p>
                 Aside from computer science, I use a lot of my free time to
                 develop my art skills in different mediums, primarily
@@ -94,17 +93,17 @@ const App = () => {
             <EuiText>
               <p>Here are some of the projects I've worked on:</p>
             </EuiText>
-            <EuiFlexGroup gutterSize="l">
+            <EuiFlexGroup direction="column" gutterSize="m">
               <EuiFlexItem>
                 <EuiCard
                   icon={<EuiIcon size="xxl" type="devToolsApp" />}
                   title='"Do the Math" Programming Language - F#'
                   description="Do the Math (DTM) is a simple specialized 
-                               programming language made to simulate how other 
-                               languages work using parsers and evaluators. It 
-                               includes a REPL, supports file input, and focuses
-                               on computing math expressions in prefix and infix 
-                               notation."
+                             programming language made to simulate how other 
+                             languages work using parsers and evaluators. It 
+                             includes a REPL, supports file input, and focuses
+                             on computing math expressions in prefix and infix 
+                             notation."
                   footer={
                     <EuiButton aria-label="Go to Developers Tools">
                       See it
