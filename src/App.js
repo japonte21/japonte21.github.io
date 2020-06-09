@@ -20,9 +20,16 @@ import {
 import Header from "./Header";
 import PageSection from "./PageSection";
 
+
+// importing pictures used on the page, saved in the repo under ./images
+import cLogo from "./images/c-logo.png";
+import fSharpLogo from "./images/FSharp-logo.png";
+import javaLogo from "./images/java-logo.png";
+
+
 // Other themes are also available - see files at
 // node_modules/@elastic/eui/dist/
-import "@elastic/eui/dist/eui_theme_dark.css";
+import "@elastic/eui/dist/eui_theme_amsterdam_dark.css";
 import "./App.css";
 
 const App = () => {
@@ -69,7 +76,7 @@ const App = () => {
                 Studies. I am primarily interested in software engineering,
                 developing application software, and generally learning how a
                 programming language works. I'm currently learning how to work
-                on editing websites using HTML and CSS, but I also have
+                on editing websites using HTML, CSS, and JavaScript but I also have
                 experience with content management systems, such as WordPress.
                 After graduation, I hope to work with a company to create new
                 tools that can be useful for everyday life by creating
@@ -96,7 +103,14 @@ const App = () => {
             <EuiFlexGroup direction="column" gutterSize="m">
               <EuiFlexItem>
                 <EuiCard
-                  icon={<EuiIcon size="xxl" type="devToolsApp" />}
+                  icon={
+                    <EuiIcon
+                      type={fSharpLogo}
+                      size="xxl"
+                                          style={{ display: "inline", margin: 0, width: "auto" }}
+                                          alt="F Sharp Programming Language Logo"
+                    />
+                  }
                   title='"Do the Math" Programming Language - F#'
                   description="Do the Math (DTM) is a simple specialized 
                              programming language made to simulate how other 
@@ -113,7 +127,15 @@ const App = () => {
               </EuiFlexItem>
               <EuiFlexItem>
                 <EuiCard
-                  icon={<EuiIcon size="xxl" type="devToolsApp" />}
+                  icon={
+                    <EuiIcon
+                      type={javaLogo}
+                      size="xxl"
+                                          style={{ display: "inline", margin: 0, width: "auto" }}
+                                          alt="Java Programming Language Logo"
+
+                    />
+                  }
                   title="Exam Scheduler - Java"
                   description="This program uses a weighted graph and a greedy 
                                sorting algorithm to schedule exams based on a 
@@ -129,7 +151,14 @@ const App = () => {
               </EuiFlexItem>
               <EuiFlexItem>
                 <EuiCard
-                  icon={<EuiIcon size="xxl" type="devToolsApp" />}
+                  icon={
+                    <EuiIcon
+                      type={javaLogo}
+                      size="xxl"
+                                          style={{ display: "inline", margin: 0, width: "auto" }}
+                                          alt="Java Programming Language Logo"
+                    />
+                  }
                   title="Hash Table Statistics - Java"
                   description="This program implements a hash table to compute 
                                statistics on a data set of 3,000+ movies. It 
@@ -145,7 +174,14 @@ const App = () => {
               </EuiFlexItem>
               <EuiFlexItem>
                 <EuiCard
-                  icon={<EuiIcon size="xxl" type="devToolsApp" />}
+                  icon={
+                    <EuiIcon
+                      type={cLogo}
+                      size="xxl"
+                                          style={{ display: "inline", margin: 0, width: "auto" }}
+                                          alt="C Programming Language Logo"
+                    />
+                  }
                   title="Cache Memory Simulator - C"
                   description="This program simulates the hit/miss behavior of 
                                cache memory using the LRU replacement policy. It 
