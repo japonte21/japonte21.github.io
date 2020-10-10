@@ -4,24 +4,24 @@
 }
 
 @media (min-width: 767px) {
-    .euiPageSideBar {
-        position: fixed;
-        display: block;
-        top: 77px;
-        bottom: 0;
-        width: 200px;
-    }
+  .euiPageSideBar {
+    position: fixed;
+    display: block;
+    top: 77px;
+    bottom: 0;
+    width: 200px;
+  }
 
-    .euiPageBody {
-        margin-left: 220px;
-    }
+  .euiPageBody {
+    margin-left: 220px;
+  }
 }
 
 h2::before {
-    display: block;
-    content: ' ';
-    margin-top: -50px;
-    height: 50px;
-    visibility: hidden;
-    pointer-events: none;
+  display: block;
+  content: " ";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden;
+  pointer-events: none;
 }

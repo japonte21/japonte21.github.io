@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import {
   EuiPageContent,
   EuiPageContentHeader,
   EuiPageContentHeaderSection,
   EuiTitle,
-} from '@elastic/eui';
+} from "@elastic/eui";
 
 const PageSection = ({ title, children }) => {
-  const titleID = () => title.toLowerCase().split(' ').join('-');
+  const titleID = () => title.toLowerCase().split(" ").join("-");
 
   return (
     <EuiPageContent>

@@ -118,7 +118,7 @@ const App = () => {
                       alt="F Sharp Programming Language Logo"
                     />
                   }
-                  title='DTM Programming Language - F#'
+                  title="DTM Programming Language - F#"
                   description="Do the Math (DTM) is a simple specialized 
                              programming language made to simulate how other 
                              languages work using parsers and evaluators. It 
